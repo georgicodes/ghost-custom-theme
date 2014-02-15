@@ -11,7 +11,9 @@
     <section itemprop="articleBody">  
       <div class="post-main">
         <!-- Post date for mobile & multi author style -->
-        <span class="post-date"><time datetime="{{date format='YYYY-MM-DD'}}">{{date format="MMMM DD, YYYY"}}</time></span>        
+        <!--
+        <span class="post-date"><time datetime="{{date format='YYYY-MM-DD'}}">{{date format="MMMM DD, YYYY"}}</time></span>
+        -->        
       
         <!-- Post title -->
         <h2 class="post-title" itemprop="name">{{{title}}}</h2>        
@@ -19,20 +21,8 @@
         <!-- Post content -->
         <div class="post-content">{{content}}</div>
       </div>
-      <div class="post-meta">        
-        {{#if tags}}
-        <!-- Post tags -->
-        <span class="post-tags-inline">
-          <span class="post-tags-label">Posted in:</span>
-          {{#foreach tags}}
-            <span class="post-tag">{{name}}{{#if @last}}{{else}}<span class="post-tag-spacer">,</span>{{/if}}</span>
-          {{/foreach}}
-        </span>
-        {{/if}}
-        
-        <!-- Post share links -->
-        {{> post_share}}
-      </div>        
+      
+      
     </section>
   
   {{/post}}
