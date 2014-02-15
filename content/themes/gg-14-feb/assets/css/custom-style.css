@@ -31,6 +31,15 @@
  * @section 1. General Elements
  * 
  ******************************************************/
+ pre code {
+/*  display:block;
+  word-wrap: break-word;
+  word-break: break-all;*/
+  font-size: 90%;
+  color: #c7254e;
+  background-color: #f9f2f4;
+  border-radius: 4px;
+}
 /*******************************************************
  *
  * @section 2. Colours
